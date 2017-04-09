@@ -1,0 +1,2 @@
+github "apollostack/apollo-ios"
+github "auth0/Lock.swift" ~>2.1.0

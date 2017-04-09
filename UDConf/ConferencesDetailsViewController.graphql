@@ -1,0 +1,38 @@
+query ConferenceAttendees($id: ID!) {
+  Conference(id: $id) {
+    id
+    attendees {
+      ...AttendeeDetails
+    }
+  }
+}
+
+mutation AttendConference($userId: ID!, $conferenceId: ID!) {
+  addToConferenceAttendees(attendeesUserId: $userId, conferencesConferenceId: $conferenceId) {
+    conferencesConference {
+      id
+      attendees {
+        ...AttendeeDetails
+      }
+    }
+  }
+}
+
+mutation NotAttendConference($userId: ID!, $conferenceId: ID!) {
+  removeFromConferenceAttendees(attendeesUserId: $userId, conferencesConferenceId: $conferenceId) {
+    conferencesConference {
+      id
+      attendees {
+        ...AttendeeDetails
+      }
+    }
+  }
+}
+
+fragment AttendeeDetails on User {
+  id
+  name
+  _conferencesMeta {
+    count
+  }
+}

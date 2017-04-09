@@ -1,0 +1,73 @@
+require('semantic')
+
+opt_out_usage
+
+fastlane_version "1.103.0"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Installs dependencies using Carthage"
+  lane :dependencies do |options|
+    action = options[:action]
+    carthage(use_binaries: false, command: action)
+  end
+
+  desc "Bootstrap the development environment"
+  lane :bootstrap do
+    dependencies
+  end
+
+  desc "Install dependencies from cache"
+  lane :prepare_cache do
+    Dir.chdir ".." do
+      sh "export AWS_REGION=#{ENV["AWS_REGION"]};carthage_cache install --bucket-name #{ENV["CARTHAGE_CACHE_BUCKET_NAME"]}"
+    end
+  end
+
+  desc "Publish dependencies to cache"
+  desc "To run this lane you need to configure the carthage_cache.yml"
+  lane :publish_cache do
+    Dir.chdir ".." do
+      sh "carthage_cache publish"
+    end
+  end
+
+  desc "Run code linter"
+  lane :lint do
+  	swiftlint(
+  		mode: :lint,
+   		config_file: '.swiftlint.yml',
+      reporter: 'emoji'
+  	)
+  end
+
+  desc "Runs all the tests"
+  lane :test do |options|
+    scheme = options[:scheme]
+    device = options[:device]
+    scan(
+      scheme: scheme,
+      device: device,
+      clean: true,
+      output_types: 'junit'
+      )
+  end
+
+  desc "Runs all the tests in a CI environment"
+  lane :ci do
+    # TODO: Run rest of platforms
+    lint
+    prepare_cache
+    test
+  end
+
+  desc "Releases the library to Cocoapods & Github Releases and updates README/CHANGELOG"
+  desc "You need to specify the type of release with the `bump` parameter with the values [major|minor|patch]"
+  lane :release do |options|
+    release_options = {repository: 'Auth0.swift', xcodeproj: 'Auth0.xcodeproj'}.merge(options)
+    prepare_release release_options
+    publish_release
+  end
+end

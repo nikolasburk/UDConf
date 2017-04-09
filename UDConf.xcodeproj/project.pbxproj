@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		558E48091E96243E00CB368E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E48081E96243E00CB368E /* AppDelegate.swift */; };
+		558E480E1E96243E00CB368E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558E480C1E96243E00CB368E /* Main.storyboard */; };
+		558E48101E96243E00CB368E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558E480F1E96243E00CB368E /* Assets.xcassets */; };
+		558E48131E96243E00CB368E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558E48111E96243E00CB368E /* LaunchScreen.storyboard */; };
+		558E481C1E96265300CB368E /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E481B1E96265300CB368E /* Apollo.framework */; };
+		558E481F1E96271300CB368E /* ConferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E481E1E96271300CB368E /* ConferencesTableViewController.swift */; };
+		558E48231E96288300CB368E /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 558E48221E96288300CB368E /* Auth0.plist */; };
+		558E48261E9628E800CB368E /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E48241E9628E800CB368E /* Auth0.framework */; };
+		558E48271E9628E800CB368E /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558E48251E9628E800CB368E /* Lock.framework */; };
+		558E482B1E96325E00CB368E /* ConferencesTableViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 558E482A1E96325E00CB368E /* ConferencesTableViewController.graphql */; };
+		558E482E1E9632D300CB368E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E482D1E9632D300CB368E /* API.swift */; };
+		558E48301E9635A800CB368E /* ConferencesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E482F1E9635A800CB368E /* ConferencesDetailViewController.swift */; };
+		558E48321E96392700CB368E /* ConferencesDetailsViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 558E48311E96392700CB368E /* ConferencesDetailsViewController.graphql */; };
+		55F421E31E96D1D4002F8E96 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F421E21E96D1D4002F8E96 /* Credentials.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		558E48051E96243E00CB368E /* UDConf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDConf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		558E48081E96243E00CB368E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		558E480D1E96243E00CB368E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		558E480F1E96243E00CB368E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		558E48121E96243E00CB368E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		558E48141E96243E00CB368E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558E481B1E96265300CB368E /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
+		558E481E1E96271300CB368E /* ConferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesTableViewController.swift; sourceTree = "<group>"; };
+		558E48221E96288300CB368E /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		558E48241E9628E800CB368E /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
+		558E48251E9628E800CB368E /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
+		558E482A1E96325E00CB368E /* ConferencesTableViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConferencesTableViewController.graphql; sourceTree = "<group>"; };
+		558E482D1E9632D300CB368E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		558E482F1E9635A800CB368E /* ConferencesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesDetailViewController.swift; sourceTree = "<group>"; };
+		558E48311E96392700CB368E /* ConferencesDetailsViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConferencesDetailsViewController.graphql; sourceTree = "<group>"; };
+		55F421E21E96D1D4002F8E96 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		558E48021E96243E00CB368E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558E481C1E96265300CB368E /* Apollo.framework in Frameworks */,
+				558E48261E9628E800CB368E /* Auth0.framework in Frameworks */,
+				558E48271E9628E800CB368E /* Lock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		558E47FC1E96243E00CB368E = {
+			isa = PBXGroup;
+			children = (
+				558E48071E96243E00CB368E /* UDConf */,
+				558E48061E96243E00CB368E /* Products */,
+				558E481A1E96265200CB368E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		558E48061E96243E00CB368E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				558E48051E96243E00CB368E /* UDConf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		558E48071E96243E00CB368E /* UDConf */ = {
+			isa = PBXGroup;
+			children = (
+				558E48081E96243E00CB368E /* AppDelegate.swift */,
+				558E48331E96392E00CB368E /* graphql */,
+				558E481E1E96271300CB368E /* ConferencesTableViewController.swift */,
+				558E482F1E9635A800CB368E /* ConferencesDetailViewController.swift */,
+				55F421E21E96D1D4002F8E96 /* Credentials.swift */,
+				558E480C1E96243E00CB368E /* Main.storyboard */,
+				558E480F1E96243E00CB368E /* Assets.xcassets */,
+				558E48111E96243E00CB368E /* LaunchScreen.storyboard */,
+				558E48141E96243E00CB368E /* Info.plist */,
+				558E48221E96288300CB368E /* Auth0.plist */,
+			);
+			path = UDConf;
+			sourceTree = "<group>";
+		};
+		558E481A1E96265200CB368E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				558E48241E9628E800CB368E /* Auth0.framework */,
+				558E48251E9628E800CB368E /* Lock.framework */,
+				558E481B1E96265300CB368E /* Apollo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		558E48331E96392E00CB368E /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				558E482D1E9632D300CB368E /* API.swift */,
+				558E482A1E96325E00CB368E /* ConferencesTableViewController.graphql */,
+				558E48311E96392700CB368E /* ConferencesDetailsViewController.graphql */,
+			);
+			name = graphql;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		558E48041E96243E00CB368E /* UDConf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558E48171E96243E00CB368E /* Build configuration list for PBXNativeTarget "UDConf" */;
+			buildPhases = (
+				558E482C1E96327500CB368E /* Generate Apollo GraphQL API */,
+				558E48011E96243E00CB368E /* Sources */,
+				558E48021E96243E00CB368E /* Frameworks */,
+				558E48031E96243E00CB368E /* Resources */,
+				558E481D1E96266000CB368E /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UDConf;
+			productName = UDConf;
+			productReference = 558E48051E96243E00CB368E /* UDConf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		558E47FD1E96243E00CB368E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Nikolas Burk";
+				TargetAttributes = {
+					558E48041E96243E00CB368E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 558E48001E96243E00CB368E /* Build configuration list for PBXProject "UDConf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 558E47FC1E96243E00CB368E;
+			productRefGroup = 558E48061E96243E00CB368E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				558E48041E96243E00CB368E /* UDConf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		558E48031E96243E00CB368E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558E48131E96243E00CB368E /* LaunchScreen.storyboard in Resources */,
+				558E48101E96243E00CB368E /* Assets.xcassets in Resources */,
+				558E482B1E96325E00CB368E /* ConferencesTableViewController.graphql in Resources */,
+				558E48321E96392700CB368E /* ConferencesDetailsViewController.graphql in Resources */,
+				558E480E1E96243E00CB368E /* Main.storyboard in Resources */,
+				558E48231E96288300CB368E /* Auth0.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		558E481D1E96266000CB368E /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Apollo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lock.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Auth0.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		558E482C1E96327500CB368E /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		558E48011E96243E00CB368E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558E481F1E96271300CB368E /* ConferencesTableViewController.swift in Sources */,
+				558E48301E9635A800CB368E /* ConferencesDetailViewController.swift in Sources */,
+				55F421E31E96D1D4002F8E96 /* Credentials.swift in Sources */,
+				558E482E1E9632D300CB368E /* API.swift in Sources */,
+				558E48091E96243E00CB368E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		558E480C1E96243E00CB368E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558E480D1E96243E00CB368E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		558E48111E96243E00CB368E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				558E48121E96243E00CB368E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		558E48151E96243E00CB368E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		558E48161E96243E00CB368E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		558E48181E96243E00CB368E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UDConf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphcool.nikolasburk.UDConf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		558E48191E96243E00CB368E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UDConf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphcool.nikolasburk.UDConf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		558E48001E96243E00CB368E /* Build configuration list for PBXProject "UDConf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558E48151E96243E00CB368E /* Debug */,
+				558E48161E96243E00CB368E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558E48171E96243E00CB368E /* Build configuration list for PBXNativeTarget "UDConf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558E48181E96243E00CB368E /* Debug */,
+				558E48191E96243E00CB368E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 558E47FD1E96243E00CB368E /* Project object */;
+}
