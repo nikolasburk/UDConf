@@ -10,7 +10,7 @@ import UIKit
 import Apollo
 import Lock
 
-let graphQLEndpoint = "https://api.graph.cool/simple/v1/cj161c82t9aj40103bsh8m12t"
+let graphQLEndpoint = "https://api.graph.cool/simple/v1/__PROJECT_ID__"
 
 var apollo: ApolloClient!
 
